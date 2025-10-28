@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "apollo-backend"
+version = "0.1.0"
+description = "FTP analytics backend"
+authors = ["Internal"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.110.0"
+uvicorn = "^0.29.0"
+python-dotenv = "^1.0.1"
+pydantic = "^2.6.0"
+pydantic-settings = "^2.1.0"
+python-multipart = "^0.0.9"
+starlette = "^0.36.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+pytest-asyncio = "^0.23.5"
+respx = "^0.20.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
